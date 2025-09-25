@@ -15,38 +15,39 @@
             flex-direction: column;
             text-align: center;
         }
+
         h1 {
             font-size: 3em;
             color: #fff;
             text-shadow: 2px 2px #ff69b4;
+            margin-bottom: 20px;
         }
-        button {
-            margin-top: 20px;
-            padding: 15px 30px;
-            font-size: 1.5em;
+
+        .pusheen-button {
+            background: url('https://a.allegroimg.com/s1024/0c53c0/125075da4f109297801b5e13f8b7') no-repeat center center;
+            background-size: contain;
+            width: 300px;  /* większy puszeen */
+            height: 300px;
             border: none;
-            border-radius: 15px;
-            background-color: #ff69b4;
-            color: white;
             cursor: pointer;
-            box-shadow: 2px 2px 5px #ff1493;
         }
-        img.sticker {
-            width: 100px;
-            margin: 10px;
+
+        .caption {
+            margin-top: 15px;
+            font-size: 1.5em;
+            color: #fff;
+            text-shadow: 1px 1px #ff69b4;
         }
     </style>
 </head>
 <body>
     <h1>For my baby 💖</h1>
-    <img class="sticker" src="https://e1.pngegg.com/pngimages/938/774/png-clipart-pusheen-cat-pusheen-cat-thumbnail.png" alt="pusheen">
-    <p>Click the button for your surprise!</p>
-    <button onclick="nextPage()">🎁 Surprise!</button>
+    <button class="pusheen-button" onclick="nextPage()"></button>
+    <div class="caption">Click pusheen for your surprise!</div>
 
     <script>
         function nextPage() {
-            // tu później będzie przejście do drugiej strony
-            alert('Tutaj będzie przejście do następnej strony 😎');
+            window.location.href = "memories.html"; // tutaj nazwa drugiej strony
         }
     </script>
 </body>
