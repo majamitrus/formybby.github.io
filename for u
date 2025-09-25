@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>For my baby</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #ffc0cb; /* różowe tło */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            color: #fff;
+            text-shadow: 2px 2px #ff69b4;
+        }
+        button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 15px;
+            background-color: #ff69b4;
+            color: white;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px #ff1493;
+        }
+        img.sticker {
+            width: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>For my baby 💖</h1>
+    <img class="sticker" src="https://e1.pngegg.com/pngimages/938/774/png-clipart-pusheen-cat-pusheen-cat-thumbnail.png" alt="pusheen">
+    <p>Click the button for your surprise!</p>
+    <button onclick="nextPage()">🎁 Surprise!</button>
+
+    <script>
+        function nextPage() {
+            // tu później będzie przejście do drugiej strony
+            alert('Tutaj będzie przejście do następnej strony 😎');
+        }
+    </script>
+</body>
+</html>
